@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<nav>
+		<section class="logo">
+				<a href="index.html"><img src="assets/img/aman.jpg"></a>		
+		</section>
+		<span class="hamburger" onclick="myfun()">
+			<i class="fas fa-bars"></i>
+			
+		</span>
+		
+		<section id="item" class="hide">
+
+		<div class="item">
+
+			<li><a href="index.html"> Home</a> </li>
+
+			<li><a href="about.html"> About</a> </li>
+		
+			<li><a href="menu.html">Menu</li>
+			<li><a href="contact.html" class="active">Contact us</a></li>		
+		</div>
+		<div class="seconditem">
+			<li class="search">
+				<input type="text" name="">
+				<i class="fas fa-search"></i>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/legendneverretires"><i class="fab fa-facebook-f"></i></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/aman_17_01"><i class="fab fa-instagram"></i></a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/aman-anand-572359191"><i class="fab fa-linkedin-in"></i></a>
+			</li>
+			<li>
+				<a href="mailto:legendneverretires@gmail.com"><i class="fas fa-envelope"></i></a>
+			</li>
+			<li>
+				<a href="https://github.com/aman-anand17"><i class="fab fa-github"></i></a>
+			</li>			
+		</div>
+			
+		</section>
+	</nav>
+	<div id="image">
+		<img src="assets/img/telephone.jpg" style="width: 100%; height: 400px;">
+	</div>
+	<div class="heading">
+		<h1>Contact..</h1>
+		<hr style="color: #fff">
+
+	</div>
+	<div class="contactitem">
+		<div class="beforeform" id="bfr">
+			<h2>Address</h2>
+			<p>ytfuyfufguygvjkuv hvuig jg 98877</p>
+			<h2>
+				phone number
+			</h2>
+			<p>5447676, 986789 </p>
+			<h2>Lets Talk</h2>
+			<p>legendneveretires@gmail.com</p>
+			
+
+			
+		</div>
+		<div class="form">
+			<form action="contact.php" method="post">
+			    <label for="fname">First Name</label>
+			    <input type="text" style="color: #333;" id="fname" name="name" placeholder="Your name.." required="">
+
+			    <label for="lname">Last Name</label>
+			    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="" style="color: #333;">
+
+			    <label for="email">Email</label>
+			    <input type="email" id="email" style="color: #333;" name="email" placeholder="abc@gmail.com" required="">
+
+			  
+			    <label for="subject">Subject</label>
+			    <input type="text" id="subject" name="subject" placeholder="Write something.." style="height:200px" required style="color: #333;"></input>
+
+			    <input type="submit" value="Submit" style="margin-left: 40%;" onclick="contact()">
+			 </form>
+						
+		</div>
+		
+	</div>
+	<div class="map">
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.3640572834483!2d85.05478711420972!3d25.626040083698523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57bf8fca9b1b%3A0x5fd1355dd2516989!2sShyam%20Complex!5e0!3m2!1sen!2sin!4v1591912061835!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		        <footer id="footer">
+
+				<a href="https://www.facebook.com/legendneverretires"><i class="fab fa-facebook-f"></i></a>
+			 
+				<a href="https://www.instagram.com/aman_17_01"><i class="fab fa-instagram"></i></a>
+		 
+				<a href="https://www.linkedin.com/in/aman-anand-572359191"><i class="fab fa-linkedin-in"></i></a>
+		 
+			<a href="mailto:legendneverretires@gmail.com"><i class="fas fa-envelope"></i></a> 
+			 
+				<a href="https://github.com/aman-anand17"><i class="fab fa-github"></i></a>
+				<a href="#" id="top">back to top</a>
+			 
+		        	
+		        </footer>
+		        <script type="text/javascript">
+		        	function contact() {
+		        		alert('thanks for contacting us');
+		        		// body...
+		        	}
+		        	
+		        </script>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
