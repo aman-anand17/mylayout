@@ -13,11 +13,56 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
 	<style>
 		
+
+
+	body *{
+	box-sizing: border-box !important;
+	color: #fff;
+}
+body{
+
+	padding: 0;
+	margin: 0;
+	background-image: url("..//img/body.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a:hover{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+	color: #bd2130;
+}
+
+a{
+color: #fff;
+
+}
+#item a:hover{
+	display: inline-block;
+	
+	color: #fff;
+	border-bottom: 1px solid #aaa;
+	text-decoration: none;
+
+}
+
+.active{
+	
+	border-top: 4px solid #bd2130;
+	
+}
 nav{
-	background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+	/*background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);*/
+background-color: #333;
+
 	font-family: 'Roboto', sans-serif;
 	overflow: hidden;
 	
+}
+.content{
+	position: relative;
 }
 .logo{
 	display: inline-block;
@@ -26,13 +71,14 @@ nav{
 	overflow: hidden;
 }
 .logo img{
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 }
 #item{
 	display: inline-block;
 	width: 70%;
 	height: 100%;
+	padding-bottom: 6px;
 
 }
 .item{
@@ -50,7 +96,7 @@ nav{
 	padding: 1.5%;
 
 }
-li{
+nav li{
 	list-style: none;
 	display: inline-block;
 }
@@ -68,6 +114,7 @@ li{
 }
 input:focus{
 	border: 2px solid #43a343;
+	color: #333;
 
 }
 
@@ -75,97 +122,121 @@ input:focus{
 	display: none;
 }
 
-.sidenav{
-	width: 25%;
-	height: 661px;
-	background-color: #4a4356;
-}
-.main{
-	width: 72%;
-	background-color: rgba(45,786,213,0.6);
-	margin: 0px;
 
-}
-a{
-	text-decoration: none;
-	color: inherit;
-}
-.active{
-	border: 1px solid rgba(222,56,11,0.7);
-	background-color: rgba(32,148,8,0.9);
+
+/* top nav complete*/
+
+
+
+.nodisplay{
+	display: none;
 }
 
+/*contact content*/
+
+#image{
+	width: 100%;
+	height: 400px;
+}
+.contactitem{
+	display: flex;
+	
+}
+.form{
+	border: 2px solid gray;
+	border-radius: 5px;
+  background-color: #333;
+  padding: 20px;
+  color: #000;
+}
 
 
+}
+.beforeform{
+	border: 2px solid #fff;
+	background-color: #bed150 !important;
+	padding: 20px;
 
-
-
-
-
-
-
-.center{
+}
+#bfr{
+	width: 40%;
+}
+h1,h2{
 	text-align: center;
 }
-
-	
-#gmap
-{
-	display: inline-block;
-	border-radius: 15px;
-	background-color: rgba(32,111,12,0.8);
-	width: 40%;
-	height: 250px;
-	margin: 5%;
-}
-#form{
-	display: inline-block;
-	width: 30%;
-	height: 250px;
-	margin: 5%;
-
-	background-color: #43aa34
-};
-.firstrow{
-	/*height: 500px;*/
-
-}
-.secondrow{
-	height: 30%;
-
-}
-#youtube{
-display: inline-block;
-	border-radius: 15px;
-	background-color: rgba(34,11,142,0.8);
-	width: 40%;
-	height: 250px;
-	margin: 5%;
+p{
+	text-align: center;
+	padding: 10px;
 }
 
 
-#address{
 
-	display: inline-block;
-	width: 30%;
-	height: 250px;
-	margin: 5%;
-
-	background-color: #f36a34
+.form input[type=text],input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: #333;
 }
 
-.sidenav{
-	float: left;
+.form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.main{
-	float: left;
+
+.form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label{
+	color: #fff;
+}
+.map{
+	padding: 10%;
+
+}
+iframe{
+	width: 100%;
+	height: 550px;
 }
 
 
 
 
 
-@media screen and (max-width: 750px)
+
+
+
+
+
+
+
+
+#footer{
+	background-color: #000;
+	color: #fff;
+	margin-top: 90px;
+	padding: 4% 10%;
+	font-size: 1.5rem;
+
+}
+#footer i{
+	margin: 20px;
+}
+#footer #top{
+	float: right;
+}
+
+
+@media screen and (max-width: 768px)
 {
  .logo{
  	width: 80px;
@@ -193,6 +264,9 @@ display: inline-block;
  .hide{
 	display: none !important;
 }
+.m{
+	margin-left: 0;
+}
 .search{
 	flex-basis: 40%;
 }
@@ -201,47 +275,24 @@ display: inline-block;
 }
 
 
+/* nav done*/
 
 
-	#youtube, #address , #gmap, #form 
-	{
-		display: block;
-	}
-	#youtube, #gmap{
-		width: 75%;
-
-		
-	}
-	#address, #form{
-		width: 50%;
-	margin-left:20%;
-	height: 250px;
-	}
-	.sidenav{
-		height: 1127px;
-	}
- 
-
-
+.t{
+	margin-right: 40%;
+}
+.contactitem{
+	flex-direction: column;
+	align-items: center;
+}
+iframe{
+	height:300px;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-/*@media screen and (max-width: 750px){
-
-
-}*/
-		
-		
+}		
 		</style
 
 </head>
